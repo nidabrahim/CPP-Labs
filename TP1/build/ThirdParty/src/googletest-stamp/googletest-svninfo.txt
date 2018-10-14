@@ -1,0 +1,3 @@
+repository='https://github.com/stp/googletest/trunk/ user= password='
+module=''
+tag=''
