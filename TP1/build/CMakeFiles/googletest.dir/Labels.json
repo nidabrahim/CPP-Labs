@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/youssef/ISIMA/Cpp/TP1/build/CMakeFiles/googletest"
+			"file" : "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/MODL/TP/cpp-labs/TP1/build/CMakeFiles/googletest"
 		},
 		{
-			"file" : "/home/youssef/ISIMA/Cpp/TP1/build/CMakeFiles/googletest.rule"
+			"file" : "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/MODL/TP/cpp-labs/TP1/build/CMakeFiles/googletest.rule"
 		},
 		{
-			"file" : "/home/youssef/ISIMA/Cpp/TP1/build/CMakeFiles/googletest-complete.rule"
+			"file" : "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/MODL/TP/cpp-labs/TP1/build/CMakeFiles/googletest-complete.rule"
 		},
 		{
-			"file" : "/home/youssef/ISIMA/Cpp/TP1/build/ThirdParty/src/googletest-stamp/googletest-install.rule"
+			"file" : "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/MODL/TP/cpp-labs/TP1/build/ThirdParty/src/googletest-stamp/googletest-install.rule"
 		},
 		{
-			"file" : "/home/youssef/ISIMA/Cpp/TP1/build/ThirdParty/src/googletest-stamp/googletest-mkdir.rule"
+			"file" : "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/MODL/TP/cpp-labs/TP1/build/ThirdParty/src/googletest-stamp/googletest-mkdir.rule"
 		},
 		{
-			"file" : "/home/youssef/ISIMA/Cpp/TP1/build/ThirdParty/src/googletest-stamp/googletest-download.rule"
+			"file" : "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/MODL/TP/cpp-labs/TP1/build/ThirdParty/src/googletest-stamp/googletest-download.rule"
 		},
 		{
-			"file" : "/home/youssef/ISIMA/Cpp/TP1/build/ThirdParty/src/googletest-stamp/googletest-update.rule"
+			"file" : "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/MODL/TP/cpp-labs/TP1/build/ThirdParty/src/googletest-stamp/googletest-update.rule"
 		},
 		{
-			"file" : "/home/youssef/ISIMA/Cpp/TP1/build/ThirdParty/src/googletest-stamp/googletest-patch.rule"
+			"file" : "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/MODL/TP/cpp-labs/TP1/build/ThirdParty/src/googletest-stamp/googletest-patch.rule"
 		},
 		{
-			"file" : "/home/youssef/ISIMA/Cpp/TP1/build/ThirdParty/src/googletest-stamp/googletest-configure.rule"
+			"file" : "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/MODL/TP/cpp-labs/TP1/build/ThirdParty/src/googletest-stamp/googletest-configure.rule"
 		},
 		{
-			"file" : "/home/youssef/ISIMA/Cpp/TP1/build/ThirdParty/src/googletest-stamp/googletest-build.rule"
+			"file" : "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/MODL/TP/cpp-labs/TP1/build/ThirdParty/src/googletest-stamp/googletest-build.rule"
 		}
 	],
 	"target" : 

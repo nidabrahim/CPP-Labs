@@ -4,9 +4,10 @@
 #include <sstream>
 
 class Polaire;
-class Nuage;
+template <class T> class Nuage;
 
-Cartesien barycentre(const Nuage & N);
+
+/*Cartesien barycentre(const Nuage & N);*/
 
 class Cartesien : public Point {
 private:
@@ -25,13 +26,13 @@ public:
 	void convertir(Cartesien & c) const;
 	Cartesien(const Polaire & p);
 };
-
+/*
 class BarycentreCartesien {
 
 	public:
    
 	Cartesien operator() (const Nuage & N);
 	
-};
+};*/
 
 #endif //CARTESIEN_HPP

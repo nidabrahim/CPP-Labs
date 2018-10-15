@@ -46,7 +46,7 @@ Cartesien::Cartesien(const Polaire & p)
 	y = p.getDistance() * sin(p.getAngle() * PI / 180);
 }
 
-
+/*
 Cartesien barycentre(const Nuage & n) 
 {
 	std::stringstream out;
@@ -65,9 +65,10 @@ Cartesien barycentre(const Nuage & n)
 	}
 	return current;
 }
-
-
+*/
+/*
 Cartesien BarycentreCartesien::operator() (const Nuage & N)
 { 
 	return barycentre(N);
 }
+*/

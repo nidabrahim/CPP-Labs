@@ -4,7 +4,7 @@
 #include <sstream>
 
 class Cartesien;
-class Nuage;
+template <class T> class Nuage;
 
 class Polaire : public Point {
 private:
@@ -23,7 +23,7 @@ public:
 	Polaire(const Cartesien & c);
 };
 
-
+/*
 class BarycentrePolaire {
 
 	public:
@@ -31,5 +31,5 @@ class BarycentrePolaire {
 	Polaire operator() (const Nuage & N);
 	
 };
-
+*/
 #endif //POLAIRE_HPP

@@ -45,11 +45,11 @@ angle(acos(c.getX()/distance) * 180 / PI)
 {
 }
 
-
+/*
 Polaire BarycentrePolaire::operator() (const Nuage & N) 
 { 
 	Cartesien C = barycentre(N);
 	Polaire P(C);
 	
 	return P; 
-}
+}*/

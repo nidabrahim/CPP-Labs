@@ -4,7 +4,7 @@
 #include <sstream>
 
 class Polaire;
-class Nuage;
+template <class T> class Nuage;
 
 Cartesien barycentre(const Nuage & N);
 
