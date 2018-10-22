@@ -41,8 +41,29 @@ void Polaire::convertir(Polaire & p) const
 
 Polaire::Polaire(const Cartesien & c )
 :distance(sqrt(pow(c.getX(),2)+pow(c.getY(),2))), 
-angle(acos(c.getX()/distance) * 180 / PI)
+angle((distance!=0)?(acos(c.getX()/distance) * 180 / PI):0)
 {
+}
+
+Polaire barycentre_v1(const Nuage<Polaire> & n) 
+{
+	std::stringstream out;
+	double x=0,y=0,nb=(double)n.size();
+	Cartesien current(0,0);
+	for(Nuage<Polaire>::const_iterator it = n.begin(); it != n.end();++it)
+	{
+		(*it).convertir(current);
+		x+=current.getX();
+		y+=current.getY();
+	}
+	if(nb!=0)
+	{
+		current.setX(x/nb);
+		current.setY(y/nb);
+	}
+	Polaire P(current);
+	return P;
+	
 }
 
 /*

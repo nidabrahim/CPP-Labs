@@ -6,6 +6,8 @@
 class Cartesien;
 template <class T> class Nuage;
 
+Polaire barycentre_v1(const Nuage<Polaire> & N);
+
 class Polaire : public Point {
 private:
 	double  distance, angle;
@@ -22,6 +24,8 @@ public:
 	void convertir(Polaire & p) const;
 	Polaire(const Cartesien & c);
 };
+
+
 
 /*
 class BarycentrePolaire {

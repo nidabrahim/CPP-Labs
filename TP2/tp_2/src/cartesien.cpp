@@ -46,15 +46,15 @@ Cartesien::Cartesien(const Polaire & p)
 	y = p.getDistance() * sin(p.getAngle() * PI / 180);
 }
 
-/*
-Cartesien barycentre(const Nuage & n) 
+
+Cartesien barycentre_v1(const Nuage<Cartesien> & n) 
 {
 	std::stringstream out;
 	double x=0,y=0,nb=(double)n.size();
 	Cartesien current(0,0);
-	for(Nuage::const_iterator it = n.begin(); it != n.end();++it)
+	for(Nuage<Cartesien>::const_iterator it = n.begin(); it != n.end();++it)
 	{
-		(*it)->convertir(current);
+		(*it).convertir(current);
 		x+=current.getX();
 		y+=current.getY();
 	}
@@ -65,7 +65,14 @@ Cartesien barycentre(const Nuage & n)
 	}
 	return current;
 }
-*/
+/*
+template <typename V>
+Cartesien barycentre_v2(const V & n) 
+{
+	return barycentre_v1(n);
+}*/
+
+
 /*
 Cartesien BarycentreCartesien::operator() (const Nuage & N)
 { 
