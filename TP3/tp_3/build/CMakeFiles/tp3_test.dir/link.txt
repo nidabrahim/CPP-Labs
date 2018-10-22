@@ -1,0 +1,1 @@
+/usr/lib64/ccache/cc   -rdynamic   -o tp3_test -lpthread 
