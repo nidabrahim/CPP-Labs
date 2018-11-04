@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,19 +6,67 @@
 
 #IncludeRegexTransform: 
 
+../src/classe.hpp
+
+../src/echantillon.hpp
+valeur.hpp
+../src/valeur.hpp
+vector
+-
+
+../src/histogramme.hpp
+classe.hpp
+../src/classe.hpp
+echantillon.hpp
+../src/echantillon.hpp
+set
+-
+
 ../src/valeur.hpp
 
-/home/LOCAL.ISIMA.FR/yonidabrah/Documents/MODL/TP/cpp-labs/TP3/tp_3/src/valeur.cpp
+/home/youssef/ISIMA/Cpp/TP3/tp_3/src/classe.cpp
+classe.hpp
+/home/youssef/ISIMA/Cpp/TP3/tp_3/src/classe.hpp
+
+/home/youssef/ISIMA/Cpp/TP3/tp_3/src/classe.hpp
+
+/home/youssef/ISIMA/Cpp/TP3/tp_3/src/echantillon.cpp
+echantillon.hpp
+/home/youssef/ISIMA/Cpp/TP3/tp_3/src/echantillon.hpp
+stdexcept
+-
+
+/home/youssef/ISIMA/Cpp/TP3/tp_3/src/echantillon.hpp
 valeur.hpp
-/home/LOCAL.ISIMA.FR/yonidabrah/Documents/MODL/TP/cpp-labs/TP3/tp_3/src/valeur.hpp
+/home/youssef/ISIMA/Cpp/TP3/tp_3/src/valeur.hpp
+vector
+-
 
-/home/LOCAL.ISIMA.FR/yonidabrah/Documents/MODL/TP/cpp-labs/TP3/tp_3/src/valeur.hpp
+/home/youssef/ISIMA/Cpp/TP3/tp_3/src/histogramme.cpp
+histogramme.hpp
+/home/youssef/ISIMA/Cpp/TP3/tp_3/src/histogramme.hpp
+iostream
+-
 
-/home/LOCAL.ISIMA.FR/yonidabrah/Documents/MODL/TP/cpp-labs/TP3/tp_3/test/catch.cpp
+/home/youssef/ISIMA/Cpp/TP3/tp_3/src/histogramme.hpp
+classe.hpp
+/home/youssef/ISIMA/Cpp/TP3/tp_3/src/classe.hpp
+echantillon.hpp
+/home/youssef/ISIMA/Cpp/TP3/tp_3/src/echantillon.hpp
+set
+-
+
+/home/youssef/ISIMA/Cpp/TP3/tp_3/src/valeur.cpp
+valeur.hpp
+/home/youssef/ISIMA/Cpp/TP3/tp_3/src/valeur.hpp
+
+/home/youssef/ISIMA/Cpp/TP3/tp_3/src/valeur.hpp
+
+/home/youssef/ISIMA/Cpp/TP3/tp_3/test/catch.cpp
 catch.hpp
-/home/LOCAL.ISIMA.FR/yonidabrah/Documents/MODL/TP/cpp-labs/TP3/tp_3/test/catch.hpp
+/home/youssef/ISIMA/Cpp/TP3/tp_3/test/catch.hpp
 
-/home/LOCAL.ISIMA.FR/yonidabrah/Documents/MODL/TP/cpp-labs/TP3/tp_3/test/catch.hpp
+/home/youssef/ISIMA/Cpp/TP3/tp_3/test/catch.hpp
 TargetConditionals.h
 -
 iosfwd
@@ -266,7 +314,7 @@ string
 memory
 -
 Foundation/Foundation.h
-/home/LOCAL.ISIMA.FR/yonidabrah/Documents/MODL/TP/cpp-labs/TP3/tp_3/test/Foundation/Foundation.h
+/home/youssef/ISIMA/Cpp/TP3/tp_3/test/Foundation/Foundation.h
 algorithm
 -
 random
@@ -446,11 +494,19 @@ algorithm
 cassert
 -
 
-/home/LOCAL.ISIMA.FR/yonidabrah/Documents/MODL/TP/cpp-labs/TP3/tp_3/test/tp3_test.cpp
+/home/youssef/ISIMA/Cpp/TP3/tp_3/test/tp3_test.cpp
 catch.hpp
-/home/LOCAL.ISIMA.FR/yonidabrah/Documents/MODL/TP/cpp-labs/TP3/tp_3/test/catch.hpp
+/home/youssef/ISIMA/Cpp/TP3/tp_3/test/catch.hpp
+iostream
+-
 cmath
 -
 valeur.hpp
-/home/LOCAL.ISIMA.FR/yonidabrah/Documents/MODL/TP/cpp-labs/TP3/tp_3/test/valeur.hpp
+/home/youssef/ISIMA/Cpp/TP3/tp_3/test/valeur.hpp
+echantillon.hpp
+/home/youssef/ISIMA/Cpp/TP3/tp_3/test/echantillon.hpp
+classe.hpp
+/home/youssef/ISIMA/Cpp/TP3/tp_3/test/classe.hpp
+histogramme.hpp
+-
 

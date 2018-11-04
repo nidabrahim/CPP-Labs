@@ -1,7 +1,8 @@
 #ifndef ECHANTILLON_HPP
 #define ECHANTILLON_HPP
 
-#include "Valeur.hpp"
+#include "valeur.hpp"
+#include <vector>
 
 class Echantillon {
 private:
@@ -15,9 +16,11 @@ public:
 	iterator end();*/
 
 	int getTaille() const;
-/*	void ajouter(const Valeur &v);
-	Valeur getMinValeur();
-	Valeur getMaxValeur();*/
+	void ajouter(const Valeur &v);
+	void ajouter(const double &d);
+	Valeur getMinimum();
+	Valeur getMaximum();
+	Valeur getValeur(int indice) const;
 	
 };
 

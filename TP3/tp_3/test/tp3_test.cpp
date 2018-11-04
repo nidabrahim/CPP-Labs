@@ -1,14 +1,16 @@
 // Entetes //---------------------------------------------------------------------------------------
 #include "catch.hpp"
+#include <iostream>
 
 #include <cmath>
 
 #include "valeur.hpp"
 #include "echantillon.hpp"
-//#include <histogramme.hpp>
+#include "classe.hpp"
+#include <histogramme.hpp>
 //#include <comparateur_quantite.hpp>
 
-//typedef Histogramme Histo;
+typedef Histogramme Histo;
 //typedef Histogramme<> Histo;
 
 // Tests //-----------------------------------------------------------------------------------------
@@ -55,7 +57,7 @@ TEST_CASE ( "TP3_Echantillon::Constructeur" ) {
 }
 
 //------------------------------------------------------------------------------------------------ 6
-/*TEST_CASE ( "TP3_Echantillon::Ajout" ) {
+TEST_CASE ( "TP3_Echantillon::Ajout" ) {
  Echantillon e;
 
  double v[] = { 5.0, 10.0, 15.0, 20.0 };
@@ -63,10 +65,10 @@ TEST_CASE ( "TP3_Echantillon::Constructeur" ) {
  for (unsigned i = 0; i<4; ++i) e.ajouter(v[i]);
 
  REQUIRE ( e.getTaille() == 4u );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 7
-/*TEST_CASE ( "TP3_Echantillon::MinMax" ) {
+TEST_CASE ( "TP3_Echantillon::MinMax" ) {
  Echantillon e;
 
  double v[] = { 5.0, 10.0, 15.0, 20.0 };
@@ -81,10 +83,10 @@ TEST_CASE ( "TP3_Echantillon::Constructeur" ) {
 
  REQUIRE ( e.getMinimum().getNombre() == Approx(min) );
  REQUIRE ( e.getMaximum().getNombre() == Approx(max) );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 8
-/*TEST_CASE ( "TP3_Echantillon::MinMaxException" ) {
+TEST_CASE ( "TP3_Echantillon::MinMaxException" ) {
  Echantillon e;
 
  int error = 0;
@@ -104,10 +106,10 @@ TEST_CASE ( "TP3_Echantillon::Constructeur" ) {
  catch (...) { error=1; }
 
  REQUIRE ( error == 2 );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 9
-/*TEST_CASE ( "TP3_Echantillon::Indice" ) {
+TEST_CASE ( "TP3_Echantillon::Indice" ) {
  Echantillon e;
 
  double v[] = { 5.0, 10.0, 15.0, 20.0 };
@@ -131,10 +133,10 @@ TEST_CASE ( "TP3_Echantillon::Constructeur" ) {
  catch (...) { error=1; }
 
  REQUIRE ( error == 2 );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 10
-/*TEST_CASE ( "TP3_Classe::Constructeur" ) {
+TEST_CASE ( "TP3_Classe::Constructeur" ) {
  const double a = 12.0;
  const double b = 24.0;
 
@@ -143,10 +145,10 @@ TEST_CASE ( "TP3_Echantillon::Constructeur" ) {
  REQUIRE ( c.getBorneInf() == Approx(a) );
  REQUIRE ( c.getBorneSup() == Approx(b) );
  REQUIRE ( c.getQuantite() == 0u );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 11
-/*TEST_CASE ( "TP3_Classe::Accesseurs" ) {
+TEST_CASE ( "TP3_Classe::Accesseurs" ) {
  const double   a = 12.0;
  const double   b = 24.0;
  const unsigned n = 7;
@@ -164,12 +166,12 @@ TEST_CASE ( "TP3_Echantillon::Constructeur" ) {
  c.ajouter();
 
  REQUIRE ( c.getQuantite() == n+1 );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 12
 /*TEST_CASE ( "TP3_Histogramme::Constructeur" ) {
  Histo h(5.0,15.0,5);
-
+ 
  REQUIRE ( h.getClasses().size() == 5u );
 
  double bornesInf[] = { 5.0, 7.0,  9.0, 11.0, 13.0 };
@@ -186,9 +188,9 @@ TEST_CASE ( "TP3_Echantillon::Constructeur" ) {
   ++i;
  }
 }*/
-
+/*
 //----------------------------------------------------------------------------------------------- 13
-/*TEST_CASE ( "TP3_Histogramme::Echantillon" ) {
+TEST_CASE ( "TP3_Histogramme::Echantillon" ) {
  double v[] = { 7.0, 9.0, 8.0, 5.0, 10.0, 14.0, 13.0, 6.0, 5.5, 13.5 };
  double n[] = { 3, 2, 2, 0, 3 };
 
@@ -208,8 +210,8 @@ TEST_CASE ( "TP3_Echantillon::Constructeur" ) {
   ++it;
   ++i;
  }
-}*/
-
+}
+*/
 //----------------------------------------------------------------------------------------------- 14
 /*TEST_CASE ( "TP3_Histogramme::Generique" ) {
  typedef Histogramme<> histo_t;
