@@ -1,6 +1,6 @@
 #include "histogramme.hpp"
 #include <iostream>
-
+/*
 Histogramme::Histogramme(double bi, double bs, int n){
 	
 	double amplitude = (bs-bi)/n;
@@ -10,33 +10,30 @@ Histogramme::Histogramme(double bi, double bs, int n){
 		classes.insert(Classe(j,j+amplitude));
 		j+=amplitude;
 	}
-	/*Histogramme::classes_t::const_iterator itr = classes.begin();
-	while(itr != classes.end()){
-		std::cout << itr->getBorneInf() << " " << itr->getBorneSup() << " ; "; ++itr;
-	}*/
 }
 	
-std::set<Classe> Histogramme::getClasses(){
-	
+const std::set<Classe> &Histogramme::getClasses() const {
 	return classes;
 }
 
 void Histogramme::ajouter(const Echantillon & e){
-	
-	echantillon = e;
-	for(int i=0; i<e.getTaille(); i++){
-		int j=0;
-		while(j<(int)classes.size() && (e.getValeur(i).getNombre()<classes.find(j)->getBorneInf() || e.getValeur(i).getNombre()>=classes.find(j)->getBorneSup())) j++;
-		if(j!=(int)classes.size()){
-			//double q = classes.find(j)->getQuantite();
-			//classes.find(j)->setQuantite(q+1);
-			//classes.find(j)->ajouter();
+	for(int i=0; i<e.getTaille(); ++i){
+		iterator it = classes.begin();
+		while (it!=classes.end()) {
+			if( e.getValeur(i).getNombre()>=it->getBorneInf() && e.getValeur(i).getNombre()<it->getBorneSup()){
+					Classe c = *it;
+					classes.erase(it);
+					c.ajouter();
+					classes.insert(c);
+				}
+			++it;
 		}
 	}
 }
 
-
+*/
  bool operator< (const Classe & op1, const Classe & op2)
 {
     return  op1.getBorneInf() < op2.getBorneInf();
 }
+

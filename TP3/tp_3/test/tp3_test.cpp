@@ -10,8 +10,8 @@
 #include <histogramme.hpp>
 //#include <comparateur_quantite.hpp>
 
-typedef Histogramme Histo;
-//typedef Histogramme<> Histo;
+//typedef Histogramme Histo;
+typedef Histogramme<> Histo;
 
 // Tests //-----------------------------------------------------------------------------------------
 
@@ -169,7 +169,7 @@ TEST_CASE ( "TP3_Classe::Accesseurs" ) {
 }
 
 //----------------------------------------------------------------------------------------------- 12
-/*TEST_CASE ( "TP3_Histogramme::Constructeur" ) {
+TEST_CASE ( "TP3_Histogramme::Constructeur" ) {
  Histo h(5.0,15.0,5);
  
  REQUIRE ( h.getClasses().size() == 5u );
@@ -187,8 +187,8 @@ TEST_CASE ( "TP3_Classe::Accesseurs" ) {
   ++it;
   ++i;
  }
-}*/
-/*
+}
+
 //----------------------------------------------------------------------------------------------- 13
 TEST_CASE ( "TP3_Histogramme::Echantillon" ) {
  double v[] = { 7.0, 9.0, 8.0, 5.0, 10.0, 14.0, 13.0, 6.0, 5.5, 13.5 };
@@ -211,9 +211,9 @@ TEST_CASE ( "TP3_Histogramme::Echantillon" ) {
   ++i;
  }
 }
-*/
+
 //----------------------------------------------------------------------------------------------- 14
-/*TEST_CASE ( "TP3_Histogramme::Generique" ) {
+TEST_CASE ( "TP3_Histogramme::Generique" ) {
  typedef Histogramme<> histo_t;
 
  histo_t h(5.0,15.0,5);
@@ -233,10 +233,10 @@ TEST_CASE ( "TP3_Histogramme::Echantillon" ) {
   ++it;
   ++i;
  }
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 15
-/*TEST_CASE ( "TP3_Histogramme::FoncteurGreater" ) {
+TEST_CASE ( "TP3_Histogramme::FoncteurGreater" ) {
  typedef Histogramme< std::greater<Classe> > histo_t;
 
  histo_t h(5.0,15.0,5);
@@ -256,7 +256,7 @@ TEST_CASE ( "TP3_Histogramme::Echantillon" ) {
   REQUIRE ( it->getQuantite() == 0u );
   ++it;
  }
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 16
 /*TEST_CASE ( "TP3_Histogramme::ComparateurQuantite" ) {
