@@ -37,3 +37,8 @@ void Histogramme::ajouter(const Echantillon & e){
     return  op1.getBorneInf() < op2.getBorneInf();
 }
 
+ bool operator> (const Classe & op1, const Classe & op2)
+{
+    return  op1.getBorneInf() > op2.getBorneInf();
+}
+

@@ -8,7 +8,7 @@
 #include "echantillon.hpp"
 #include "classe.hpp"
 #include <histogramme.hpp>
-//#include <comparateur_quantite.hpp>
+#include <comparateur_quantite.hpp>
 
 //typedef Histogramme Histo;
 typedef Histogramme<> Histo;
@@ -259,7 +259,7 @@ TEST_CASE ( "TP3_Histogramme::FoncteurGreater" ) {
 }
 
 //----------------------------------------------------------------------------------------------- 16
-/*TEST_CASE ( "TP3_Histogramme::ComparateurQuantite" ) {
+TEST_CASE ( "TP3_Histogramme::ComparateurQuantite" ) {
  typedef Histogramme< ComparateurQuantite<Classe> > histo_t;
 
  double v[] = { 7.0, 9.0, 8.0, 5.0, 10.0, 14.0, 13.0, 6.0, 5.5, 13.5 };
@@ -284,10 +284,10 @@ TEST_CASE ( "TP3_Histogramme::FoncteurGreater" ) {
   ++it;
   ++i;
  }
-}*/
+}
 
 //------------------------------------------------------------------------------------------------17
-/*TEST_CASE ( "TP3_Histogramme::Conversion" ) {
+TEST_CASE ( "TP3_Histogramme::Conversion" ) {
  typedef Histogramme< std::greater<Classe> >        histo1_t;
  typedef Histogramme< ComparateurQuantite<Classe> > histo2_t;
 
@@ -313,10 +313,10 @@ TEST_CASE ( "TP3_Histogramme::FoncteurGreater" ) {
   ++it;
   ++i;
  }
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 18
-/*TEST_CASE ( "TP3_Etudiant::Constructeur" ) {
+TEST_CASE ( "TP3_Etudiant::Constructeur" ) {
  const double a = 12.0;
  const char * n = "Machin";
 
@@ -326,19 +326,19 @@ TEST_CASE ( "TP3_Histogramme::FoncteurGreater" ) {
  REQUIRE ( v.getNote() == Approx(a) );
  REQUIRE ( v.getEtudiant().c_str() != 0);
  REQUIRE ( v.getEtudiant() == n );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 19
-/*TEST_CASE ( "TP3_Etudiant::ConstructeurDefaut" ) {
+TEST_CASE ( "TP3_Etudiant::ConstructeurDefaut" ) {
  Valeur v;
 
  REQUIRE ( v.getNombre() == Approx(0.0) );
  REQUIRE ( v.getNote() == Approx(0.0) );
  REQUIRE ( v.getEtudiant() == "inconnu" );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 20
-/*TEST_CASE ( "TP3_Etudiant::Accesseurs" ) {
+TEST_CASE ( "TP3_Etudiant::Accesseurs" ) {
  const double a = 12.0;
  const char * n = "Machin";
 
@@ -350,19 +350,19 @@ TEST_CASE ( "TP3_Histogramme::FoncteurGreater" ) {
  REQUIRE ( v.getNombre() == Approx(a) );
  REQUIRE ( v.getNote() == Approx(a) );
  REQUIRE ( v.getEtudiant() == n );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 21
-/*TEST_CASE ( "TP3_Etudiant::AccesseursConstants" ) {
+TEST_CASE ( "TP3_Etudiant::AccesseursConstants" ) {
  const Valeur v;
 
  REQUIRE ( v.getNombre() == Approx(0.0) );
  REQUIRE ( v.getNote() == Approx(0.0) );
  REQUIRE ( v.getEtudiant() == "inconnu" );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 22
-/*TEST_CASE ( "TP3_Valeurs::Association" ) {
+TEST_CASE ( "TP3_Valeurs::Association" ) {
  typedef Histogramme<> histo_t;
 
  double v[] = { 7.0, 9.0, 8.0, 5.0, 10.0, 14.0, 13.0, 6.0, 5.5, 13.5 };
@@ -391,7 +391,7 @@ TEST_CASE ( "TP3_Histogramme::FoncteurGreater" ) {
   ++it;
   ++i;
  }
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 23
 /*TEST_CASE ( "TP3_Valeurs::Intervalle" ) {
