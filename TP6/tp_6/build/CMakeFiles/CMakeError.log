@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/LOCAL.ISIMA.FR/yonidabrah/Documents/MODL/TP/cpp-labs/TP6/tp_6/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_799cb/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_799cb.dir/build.make CMakeFiles/cmTC_799cb.dir/build
+gmake[1] : on entre dans le répertoire « /home/LOCAL.ISIMA.FR/yonidabrah/Documents/MODL/TP/cpp-labs/TP6/tp_6/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_799cb.dir/CheckSymbolExists.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_799cb.dir/CheckSymbolExists.c.o   -c /home/LOCAL.ISIMA.FR/yonidabrah/Documents/MODL/TP/cpp-labs/TP6/tp_6/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_799cb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_799cb.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_799cb.dir/CheckSymbolExists.c.o  -o cmTC_799cb 
+CMakeFiles/cmTC_799cb.dir/CheckSymbolExists.c.o : Dans la fonction « main » :
+CheckSymbolExists.c:(.text+0x16) : référence indéfinie vers « pthread_create »
+collect2: erreur : ld a retourné 1 code d'état d'exécution
+CMakeFiles/cmTC_799cb.dir/build.make:97 : la recette pour la cible « cmTC_799cb » a échouée
+gmake[1]: *** [cmTC_799cb] Erreur 1
+gmake[1] : on quitte le répertoire « /home/LOCAL.ISIMA.FR/yonidabrah/Documents/MODL/TP/cpp-labs/TP6/tp_6/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_799cb/fast » a échouée
+gmake: *** [cmTC_799cb/fast] Erreur 2
+
+File /home/LOCAL.ISIMA.FR/yonidabrah/Documents/MODL/TP/cpp-labs/TP6/tp_6/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/LOCAL.ISIMA.FR/yonidabrah/Documents/MODL/TP/cpp-labs/TP6/tp_6/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_40989/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_40989.dir/build.make CMakeFiles/cmTC_40989.dir/build
+gmake[1] : on entre dans le répertoire « /home/LOCAL.ISIMA.FR/yonidabrah/Documents/MODL/TP/cpp-labs/TP6/tp_6/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_40989.dir/CheckFunctionExists.c.o
+/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_40989.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_40989
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40989.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_40989.dir/CheckFunctionExists.c.o  -o cmTC_40989 -lpthreads 
+/usr/bin/ld : ne peut trouver -lpthreads
+collect2: erreur : ld a retourné 1 code d'état d'exécution
+CMakeFiles/cmTC_40989.dir/build.make:97 : la recette pour la cible « cmTC_40989 » a échouée
+gmake[1]: *** [cmTC_40989] Erreur 1
+gmake[1] : on quitte le répertoire « /home/LOCAL.ISIMA.FR/yonidabrah/Documents/MODL/TP/cpp-labs/TP6/tp_6/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_40989/fast » a échouée
+gmake: *** [cmTC_40989/fast] Erreur 2
+
+

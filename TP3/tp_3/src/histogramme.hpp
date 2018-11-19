@@ -94,9 +94,16 @@ void Histogramme<T,A>::ajouter(const double & d){
 			classes.erase(it);
 			c.ajouter();
 			classes.insert(c);
-			//valeurs.insert(std::pair<Classe, Valeur>(Classe(c.getBorneInf(),c.getBorneSup(),c.getQuantite()),Valeur(d)));
+			valeurs.insert(std::pair<Classe,Valeur>(c,Valeur(d)));
 		}
 		++it;
+	}
+	
+	valeurs_t::const_iterator it = getValeurs().begin();
+	while (it!=getValeurs().end()) {
+		const Classe & c = it->first;
+		const Valeur & v = it->second;
+		std::cout << c.getBorneInf() << ":" << c.getBorneSup() << ":" << v.getNote() << "\n";
 	}
 }
 
