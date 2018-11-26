@@ -53,6 +53,7 @@ set ( ZZ3_HEADERS
       src/solitaire/paquet.hpp
       src/solitaire/plateau.hpp
       src/solitaire/solitaire.hpp
+      src/solitaire/Croupier.hpp
     )
 
 set( ZZ3_SOURCES

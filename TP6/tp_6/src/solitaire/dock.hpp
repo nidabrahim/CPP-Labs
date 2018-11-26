@@ -7,7 +7,7 @@
 class Dock : public Plateau {
 
 	private:
-		std::vector<Carte> cartes;
+		std::vector<Carte *> cartes;
 		
 	public: 
 	  bool estVide() { return (cartes.size() == 0); }
@@ -18,5 +18,4 @@ class Dock : public Plateau {
 		 cartes.erase(carte);
 		 return carte;  
 	  }
- 
 };
